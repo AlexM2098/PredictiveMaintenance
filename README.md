@@ -75,9 +75,33 @@ python app.py
 
 ## Testing
 
-- Unit tests for data preprocessing functions.
-- Unit tests for model training functions.
-- API endpoint tests.
+Testing is an integral part of any software development project, including machine learning applications. Below are the various types of tests that were implemented to ensure the robustness and reliability of the predictive maintenance model.
+
+### Unit Tests for Data Preprocessing Functions
+
+Data preprocessing is a crucial step in any machine learning pipeline. These functions were tested to ensure that they perform as expected. For example:
+
+- **Test for Null Values**: Ensures that the function correctly handles or removes any null or missing values.
+- **Test for Data Types**: Checks if the function correctly transforms data into the expected types (e.g., numerical, categorical).
+- **Test for Outliers**: Verifies if the function correctly identifies and handles outliers.
+
+### Unit Tests for Model Training Functions
+
+The machine learning model's training functions were also put under rigorous testing. For example:
+
+- **Test for Model Initialization**: Checks if the model initializes with the expected parameters.
+- **Test for Model Training**: Validates if the model trains within an acceptable duration and reaches a specified performance metric.
+- **Test for Model Saving**: Ensures that the trained model is saved correctly and can be reloaded for future use.
+
+### API Endpoint Tests
+
+Since the predictive maintenance model is deployed as a RESTful API, it's crucial to test the endpoints. The following tests were implemented:
+
+- **Test for Valid Request**: Checks if the API returns a successful response for a valid input.
+- **Test for Invalid Request**: Ensures that the API correctly handles invalid requests and returns appropriate error messages.
+- **Test for Model Prediction**: Validates if the API correctly calls the model and returns the expected prediction.
+
+By implementing these tests, we can be more confident about the reliability and robustness of the application.
 
 ---
 
