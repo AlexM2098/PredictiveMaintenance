@@ -1,8 +1,9 @@
 {
-    "data_file_path": "data/sensor_data.csv",
-    "test_size": 0.2,
-    "random_state": 42,
-    "epochs": 50,
-    "batch_size": 32
-  }
-  
+  "data_file_path": "data/sensor_data.csv",
+  "test_size": 0.2,
+  "random_state": 42,
+  "epochs": 50,
+  "batch_size": 32,
+  "model_path": "trained_model.h5",
+  "scaler_path": "standard_scaler.pkl"
+}
